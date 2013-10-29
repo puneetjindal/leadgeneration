@@ -1,9 +1,15 @@
 {% extends "base.html" %}
-{% block title %}My amazing blog{% endblock %}
+{% block pagetitle %}lEAD GENERATION MODULE{% endblock %}
+{% block primary %}
+        <div class="row-fluid">
+            <table border="4">
+                <tr><th>Name</th></tr>
 
-{% block content %}
-{% for c in all_lg %}
-{{ c.name }}
+                {% for c in all_lg %}
+                <tr><td>{{ c.name }}</td></tr>
+            </table>
+        </div>
+
 {% endfor %}
 {% endblock %}
 

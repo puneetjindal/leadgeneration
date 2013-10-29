@@ -1,0 +1,41 @@
+/* ===================================================
+ * ims_scan_form.js v1.0
+ * ===================================================
+ * to be used with ims.forms.ItemScanForm
+ * append the js to the template using the form
+ *
+ * make sure the htmls follows these divs
+ * <div id="scan_errors"></div>
+ * <div id="scan_form">define the form here</div>
+ * <div id="scan_details">define the output table here</div>
+ *
+ * ========================================================== */
+    $(document).ready(function() {
+       $("#scan_details_table").tablecloth({ theme: "stats" });
+       $("#scan_details_table").tablesorter();
+       $('#scan_form').submit(function() { // catch the form's submit event
+            $.ajax({ // create an AJAX call...
+                data: $(this).serialize(), // get the form data
+                dataType: 'json',
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function(response) { // on success..
+                    if(response.serials.success){
+                        $('#scan_details').prepend(
+                            '<tr><td>' + response.serials.serial + '</td>' +
+                            '<td>' + response.serials.product.sku + ' :: ' + response.serials.product.name + '</td>' +
+                            '<td>' + response.serials.order_line + '</td>' +
+                            '<td>' + response.serials.action + '</td>' +
+                            '<td>' + response.serials.status + '</td>' +
+                            '<td>' + response.serials.location + '</td></tr>'); // update the DIV
+                        $('#scan_details_table').trigger("update");
+                     } else { 
+                            $('#scan_errors').prepend('<p>' + response.serials.errors + '</p>');
+                            $('#scan_errors').addClass("alert alert-error");
+                            $('#scan_errors').prepend('<button type="button" class="close" data-dismiss="alert">×</button>');
+                     }
+                }
+            });
+            return false;
+        });
+    });

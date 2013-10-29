@@ -1,10 +1,11 @@
 # Django settings for leadgeneration project.
 import os
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+ ('Puneet Jindal', 'puneet.jindal@delhivery.com'),
 )
 
 MANAGERS = ADMINS
@@ -60,7 +61,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = 'static_root/'
+#STATIC_ROOT = 'static_root/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"

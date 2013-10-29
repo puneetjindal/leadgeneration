@@ -1,0 +1,56 @@
+/*
+	Stylesheet for examples by DevHeart.
+	http://devheart.org/
+
+	Article title:	jQuery: Collapsible sidebar layout
+	Article URI:	http://devheart.org/articles/jquery-collapsible-sidebar-layout/
+
+	Example title:	2. Show, hide and toggle sidebar
+	Example URI:	http://devheart.org/examples/jquery-collapsible-sidebar-layout/2-show-hide-and-toggle-sidebar/index.html
+*/
+
+/*
+	Alignment
+------------------------------------------------------------------- */
+
+/* Floats */
+
+.left {float: left;}
+.right {float: right;}
+
+.clearer {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}
+
+
+/*
+	Example specifics
+------------------------------------------------------------------- */
+
+/* Layout */
+
+#center-wrapper {
+	margin: 0 auto;
+	width: 920px;
+}
+
+
+/* Content & sidebar */
+
+
+#sidebar {
+	display: none;
+}
+
+.use-sidebar #content {width: 75%;}
+.use-sidebar #sidebar {
+	display: block;
+	width: 24%;
+}
+
+.use-sidebar.sidebar-at-left #content, .use-sidebar.sidebar-at-right #sidebar {float: right;}
+.use-sidebar.sidebar-at-right #content, .use-sidebar.sidebar-at-left #sidebar {float: left;}

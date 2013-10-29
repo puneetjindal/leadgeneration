@@ -1,0 +1,144 @@
+/* client header css */
+.navbar-client .navbar-inner{
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+.navbar-client .btn-navbar
+{
+    background-color: #0E0E0E;
+    background-image: linear-gradient(to bottom, #151515, #040404);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-client .navbar-text {
+    color: #999999;
+}
+
+.navbar-client .brand, .navbar-client .nav > li > a{
+    color: #999999;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-client .nav > li > a:focus, .navbar-client .brand:hover, .navbar-client .nav > li > a:hover{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.navbar-client .nav li.dropdown.open > .dropdown-toggle{
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.navbar-client .nav li.dropdown > .dropdown-toggle .caret
+{   border-bottom-color: #999999;
+    border-top-color: #999999;
+}
+
+.navbar-client .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-client .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-client .nav li.dropdown.open.active > .dropdown-toggle .caret{
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+.navbar-client .navbar-inner{
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+.navbar-client .btn-navbar
+{
+    background-color: #0E0E0E;
+    background-image: linear-gradient(to bottom, #151515, #040404);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-client .navbar-text {
+    color: #999999;
+}
+
+.navbar-client .brand, .navbar-client .nav > li > a{
+    color: #999999;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-client .nav > li > a:focus, .navbar-client .brand:hover, .navbar-client .nav > li > a:hover{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.navbar-client .nav li.dropdown.open > .dropdown-toggle{
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.navbar-client .nav li.dropdown > .dropdown-toggle .caret
+{   border-bottom-color: #999999;
+    border-top-color: #999999;
+}
+
+.navbar-client .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-client .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-client .nav li.dropdown.open.active > .dropdown-toggle .caret{
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+/*supplier design*/
+.navbar-supplier .navbar-inner{
+    background-color: #9a1314;
+    background-image: linear-gradient(to bottom, #8A1314, #6D0709);
+    background-repeat: repeat-x;
+    border-color: #9B2D1F;
+}
+.navbar-supplier .btn-navbar
+{
+    background-color: #0E0E0E;
+    background-image: linear-gradient(to bottom, #151515, #040404);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-supplier .navbar-text {
+    color: #bdbdbd;
+}
+
+.navbar-supplier .brand, .navbar-supplier .nav > li > a{
+    color: #d1d1d1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-supplier .nav > li > a:focus,
+.navbar-supplier .brand:hover,
+.navbar-supplier .nav > li > a:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.navbar-supplier .nav li.dropdown.open > .dropdown-toggle{
+    background-color: #570103;
+    color: #FFFFFF;
+}
+
+.navbar-supplier .nav li.dropdown > .dropdown-toggle .caret
+{   border-bottom-color: #999999;
+    border-top-color: #999999;
+}
+
+.navbar-supplier .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-supplier .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-supplier .nav li.dropdown.open.active > .dropdown-toggle .caret{
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
