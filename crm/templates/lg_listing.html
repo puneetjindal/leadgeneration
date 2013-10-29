@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+{% for c in all_lg %}
+{{ c.name }}
+{% endfor %}
+{% endblock %}
+
